@@ -21,6 +21,7 @@ type MergedState = {
     [key: string]: any
   }
 }
+
 const PERSISTED_KEYS: string[] = ['user', 'transactions']
 const loadedState = load({ states: PERSISTED_KEYS }) as MergedState
 if (loadedState.user) {
